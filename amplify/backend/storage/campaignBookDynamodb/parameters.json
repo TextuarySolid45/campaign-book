@@ -1,0 +1,5 @@
+{
+    "tableName": "campaignBookDynamodb",
+    "partitionKeyName": "id",
+    "partitionKeyType": "N"
+}

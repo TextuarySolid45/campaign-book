@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/people",
+      "lambdaFunction": "campaignBookLambdaFunction",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/people"
+    }
+  ],
+  "resourceName": "campaignBookApi",
+  "apiName": "campaignBookApi",
+  "functionArns": [
+    {
+      "lambdaFunction": "campaignBookLambdaFunction"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-campaignbook-dev-123651-authRole",
+    "unAuthRoleName": "amplify-campaignbook-dev-123651-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "campaignBookLambdaFunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
